@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background: radial-gradient(
+    /*     farthest-corner at 40px 1250px, */ #38dbff,
+    #ff4f8b, #dff1ff
+  );
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff4f8b, #dff1ff);  
+}
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+section .color {
+  position: absolute;
+  filter: blur(150px);
+}
+section .color:nth-child(1) {
+  background: #ff359b;
+  width: 600px;
+  height: 600px;
+  bottom: -350px;
+}
+section .color:nth-child(2) {
+  background: #00d2ff;
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  left: 100px;
+}
+section .color:nth-child(3) {
+  background: #fffd87;
+  width: 300px;
+  height: 300px;
+  bottom: 50px;
+  right: 0px;
+}
+.icons {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+.icons li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+}
+.icons li a {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.icons li a:hover {
+  transform: translateY(-20px);
+}
+.icons li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+.icons li a:hover::before {
+  transform: skewX(45deg) translateX(-150px);
+}
+nav {
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.6),
+      rgba(233, 233, 233, 0.1)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 13px;
+    /*   border-bottom: 1px solid #ccc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+  }
+
+
+@font-face {
+  font-family: "Recursive";
+  src: url("https://d33wubrfki0l68.cloudfront.net/0fb48cf42677cf004e48f2608a8521a4ca06b48d/8a39e/assets/fonts/recursive-mono_casl_wght_slnt_ital--2019_11_05-00_13.woff2")
+    format("woff2-variations");
+  font-weight: 300 900;
+  font-display: swap;
+}
+.link {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 30px;
+    list-style: none;
+    transition: font-variation-settings 0.2s ease-out;
+    font-family: Recursive;
+    font-variation-settings: "CASL" 0, "MONO" 0.24, "wght" 400, "slnt" 2;
+    transition: 0.5s font-variation-settings ease-in;
+  }
+.link:hover {
+        font-variation-settings: "CASL" 1, "MONO" 1, "wght" 700, "slnt" -14;
+      }
+#list{
+    display: flex;
+}
+.nav-link{
+    text-decoration: none;
+  color: #0a0a0a;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
