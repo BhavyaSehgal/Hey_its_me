@@ -9,6 +9,42 @@ body {
     #ff4f8b, #dff1ff
   );
 }
+h1 {
+    margin: 0;
+    font-family: 'Montserrat', serif;
+    font-size: 17vh;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* Fallback color in case the background effect doesn't apply */
+    background: url('https://wallpaper.dog/large/980783.jpg');
+    background-size: cover; /* Adjust the size to cover the text */
+    background-clip: text; /* Standard property to apply background to text */
+    -webkit-background-clip: text; /* WebKit-specific property */
+    color: transparent; /* Make the text color transparent so the background shows through */
+    animation: shine 7s linear infinite; /* Apply the animation */
+    z-index: 10;
+}
+
+/* Animation to move the background */
+@keyframes shine {
+    from {
+        background-position: center 0;
+    }
+    to {
+        background-position: center 100%;
+    }
+}
+
+/* If you want to style the second <h1> element differently, use nth-of-type or a specific class */
+h1:nth-of-type(2) {
+    top: 50vh; /* Position the second h1 differently */
+}
+
+  
+  
 section {
   position: absolute;
   width: 100%;
@@ -16,11 +52,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #ff4f8b, #dff1ff);  
+  background: linear-gradient(to bottom, #036e7e, #ff4f8b);  
 }
 section::before {
   content: '';
   position: absolute;
+  top: 600px;
   bottom: 0;
   width: 100%;
   height: 50%;
@@ -35,13 +72,11 @@ section .color {
 section .color:nth-child(1) {
   background: #ff359b;
   width: 600px;
-  height: 600px;
   bottom: -350px;
 }
 section .color:nth-child(2) {
   background: #00d2ff;
   width: 500px;
-  height: 500px;
   bottom: -150px;
   left: 100px;
 }
@@ -53,6 +88,7 @@ section .color:nth-child(3) {
   right: 0px;
 }
 .icons {
+    top: 190px;
   position: relative;
   display: flex;
   z-index: 2;
