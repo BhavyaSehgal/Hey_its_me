@@ -1,184 +1,128 @@
-* {
+html {
+    font-family: Papyrus,fantasy;
+
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #0A043C 0%, #03506F 100%);
+    overflow: hidden;
+}
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-body {
-    background: radial-gradient(
-    /*     farthest-corner at 40px 1250px, */ #38dbff,
-    #ff4f8b, #dff1ff
-  );
-}
-h1 {
-    margin: 0;
-    font-family: 'Montserrat', serif;
-    font-size: 17vh;
-    position: absolute;
-    top: 15vh;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white; /* Fallback color in case the background effect doesn't apply */
-    background: url('https://wallpaper.dog/large/980783.jpg');
-    background-size: cover; /* Adjust the size to cover the text */
-    background-clip: text; /* Standard property to apply background to text */
-    -webkit-background-clip: text; /* WebKit-specific property */
-    color: transparent; /* Make the text color transparent so the background shows through */
-    animation: shine 7s linear infinite; /* Apply the animation */
-    z-index: 10;
+    z-index: 1; /* Ensure stars are below the navbar */
 }
 
-/* Animation to move the background */
-@keyframes shine {
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 0;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    z-index: 1000;
+}
+
+.link {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #FFBE98;
+    text-decoration: none;
+    font-size: 30px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.link .nav-link:hover {
+    color: #CD5C08; /* Change to your hover color */
+font-style: italic;}
+
+@keyframes fadeIn {
     from {
-        background-position: center 0;
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
-        background-position: center 100%;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* If you want to style the second <h1> element differently, use nth-of-type or a specific class */
-h1:nth-of-type(2) {
-    top: 50vh; /* Position the second h1 differently */
+h1 {
+    text-align: center;
+    margin-top: 100px; /* Adjust based on header height */
+    font-size: 100px;
+    color: #A3DDCB;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+    z-index: 5;
 }
 
-  
-  
-section {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, #036e7e, #ff4f8b);  
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-section::before {
-  content: '';
-  position: absolute;
-  top: 600px;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  z-index: 1;
-  backdrop-filter: blur(5px);
-  border-top: 1px solid rgba(255,255,255,0.5);
-}
-section .color {
-  position: absolute;
-  filter: blur(150px);
-}
-section .color:nth-child(1) {
-  background: #ff359b;
-  width: 600px;
-  bottom: -350px;
-}
-section .color:nth-child(2) {
-  background: #00d2ff;
-  width: 500px;
-  bottom: -150px;
-  left: 100px;
-}
-section .color:nth-child(3) {
-  background: #fffd87;
-  width: 300px;
-  height: 300px;
-  bottom: 50px;
-  right: 0px;
-}
+
 .icons {
-    top: 190px;
-  position: relative;
-  display: flex;
-  z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
+
 .icons li {
-  position: relative;
-  list-style: none;
-  margin: 10px;
+    margin: 0 15px;
+    opacity: 0; /* Start invisible */
+    animation: slideIn 0.8s forwards; /* Bounce in effect */
 }
+
+/* Add delay to each icon for staggered effect */
+.icons li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.icons li:nth-child(2) {
+    animation-delay: 0.7s;
+}
+.icons li:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+/* Ensure icons are visible */
 .icons li a {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-  font-size: 2em;
-  border: 1px solid rgba(255,255,255,0.4);
-  border-right: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 5px 45px rgba(0,0,0,0.1);
-  backdrop-filter: blur(2px);
-  transition: 0.5s;
-  overflow: hidden;
+    color: #A3DDCB; /* Set a contrasting color */
+    font-size: 50px; /* Increase icon size */
+    transition: color 0.3s;
 }
+
 .icons li a:hover {
-  transform: translateY(-20px);
+    color: #229799; /* Change color on hover */
 }
-.icons li a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  background: rgba(255,255,255,0.5);
-  transform: skewX(45deg) translateX(150px);
-  transition: 0.5s;
-}
-.icons li a:hover::before {
-  transform: skewX(45deg) translateX(-150px);
-}
-nav {
+canvas.connecting-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 5rem;
-    background: linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0.6),
-      rgba(233, 233, 233, 0.1)
-    );
-    backdrop-filter: blur(20px);
-    border-radius: 13px;
-    /*   border-bottom: 1px solid #ccc; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 300px;
-  }
+    height: 100%;
+    z-index: 0; /* Lower than the text */
+}
 
+h1, .icons {
+    position: relative;
+    z-index: 1; /* Higher than the canvas */
+    /* You can also add a background color if needed */
+}
 
-@font-face {
-  font-family: "Recursive";
-  src: url("https://d33wubrfki0l68.cloudfront.net/0fb48cf42677cf004e48f2608a8521a4ca06b48d/8a39e/assets/fonts/recursive-mono_casl_wght_slnt_ital--2019_11_05-00_13.woff2")
-    format("woff2-variations");
-  font-weight: 300 900;
-  font-display: swap;
-}
-.link {
-    font-weight: 400;
-    font-size: 1.2rem;
-    padding: 30px;
-    list-style: none;
-    transition: font-variation-settings 0.2s ease-out;
-    font-family: Recursive;
-    font-variation-settings: "CASL" 0, "MONO" 0.24, "wght" 400, "slnt" 2;
-    transition: 0.5s font-variation-settings ease-in;
-  }
-.link:hover {
-        font-variation-settings: "CASL" 1, "MONO" 1, "wght" 700, "slnt" -14;
-      }
-#list{
-    display: flex;
-}
-.nav-link{
-    text-decoration: none;
-  color: #0a0a0a;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
