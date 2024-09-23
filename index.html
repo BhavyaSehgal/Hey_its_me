@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>  
 <header>
-    <nav>
-      <ul id="list">
-        <li class="link"><a class="nav-link" href="about.html" >About</a></li>
-        <li class="link"><a class="nav-link" href="exprience.html" >Experience</a></li>
-        <li class="link"><a class="nav-link" href="projects.html ">Projects</a></li>
-        <li class="link"><a class="nav-link" href="skills.html" >Skills</a></li>
-        <li class="link"><a class="nav-link" href="education.html" >Education</a></li>
-        <li class="link"><a class="nav-link" href="https://drive.google.com/file/d/18JyLkMsQcO02pI1PGPXoOm5tDAgihax3/view?usp=drive_link" >Resume</a></li>
-      </ul>
+    <nav class="custom-navbar">
+        <ul id="list">
+            <li class="link"><a class="nav-link " href="#about">About</a></li>
+            <li class="link"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="link"><a class="nav-link" href="#project">Projects</a></li>
+            <li class="link"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="link"><a class="nav-link " href="#education">Education</a></li>
+            <li class="link"><a class="nav-link" href="https://drive.google.com/file/d/18JyLkMsQcO02pI1PGPXoOm5tDAgihax3/view?usp=drive_link">Resume</a></li>
+            <li class="link"><a class="nav-link" href="#contact">Contact</a></li>  
+        </ul>
     </nav>
-  </header>
+</header>
+<body> 
+ 
+    <section id="contact" class="contact-section odd-section">
 
-
-        
-    <h1>Bhavya Sehgal</h1>
+        <h1>Bhavya Sehgal</h1>
+    <h2>I thrive on learning new concepts and enjoy solving intricate problems. My journey in Computer Vision and Machine Learning inspires me to find creative solutions in the tech world.</h2>
     
-    <section>
+    <div>
         <ul class="icons">
             <li>
                 <a href="https://www.linkedin.com/in/bhavya-sehgal/" target="_blank" aria-label="LinkedIn">
@@ -44,8 +46,253 @@
                 </a>
             </li>
         </ul>
-        <canvas class="connecting-dots"></canvas>
+    </div>
     </section>
+    <section><div class="about-section even-section" id="about">
+        <h2 class="sub-headings" style="padding-bottom: 0;">About</h2>
+        <div class="container flow-text">
+                
+            <h2>
+              Hey! I’m Bhavya Sehgal from Edmonton, Alberta.
+              I’m currently pursuing a PhD in Computing Science at the University of Alberta, specializing in Computer Vision and Machine Learning.
+              I thrive on continuous learning and collaboration, always seeking new opportunities to expand my skills and knowledge, and exploring the latest advancements in AI.</h2>
+              <h2>In addition to coding, I enjoy exploring various interests that enrich my life:</h2>
+<h2>
+    <ul class="left-list"><img src="img\music.png" alt="Description" style="width: 40px; height: 40px; margin-right: 10px;" >
+        Immersing myself in music across various genres, finding both inspiration and solace.</ul>
+        <br>
+        <ul class="left-list"><img src="img\watching-a-movie.png" alt="Description" style="width: 40px; height: 40px; margin-right: 10px;" > Engrossed in horror and mystery series and movies, reveling in the thrill of unexpected twists.</ul>
+        <br>
+        <ul class="left-list"><img src="img\mandala (1).png" alt="Description" style="width: 40px; height: 40px; margin-right: 10px;" >Expressing creativity through drawing and coloring mandalas and zentangles, embracing mindfulness and tranquility.</ul>
+  
+</h2>
+              
+            
+          </div></section>
+   <section><div class="education-section odd-section" id="education">
+    <h2 class="sub-headings">Education</h2>
+    <div class="education-item">
+        <div >
+            <img class="edu-logo" src="img\UOA.png" alt="Description"  >
+        </div>
+        <div class="details">
+            <h2>Phd - Computing Science</h2>
+            <h3>University of Alberta </h3>
+            </h3>
+            <p>Sep 2024 - present</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div >
+            <img class="edu-logo" src="img\UOA.png" alt="Description"  >
+
+        </div>
+        <div class="details">
+            <h2>Master of Science- Computing Science</h2>
+            <h3>University of Alberta </h3>
+            <h3><b>CGPA:</b> 3.7/4.0
+            </h3>
+            <p>Sep 2022 - Dec 2023</p>
+        </div>
+    </div>
+</div></section>
+<section class="experience-section even-section" id="experience">
+    <h2 class="sub-headings">Experience</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="experience-card">
+                    <div class="card-header" style="background-color: #16423C;">
+                        <a href="https://okaki.com/" class="company-name">Okaki</a>
+                    </div>
+                    <div class="logo-container">
+                        <img src="img/okakilogo.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="experience-text-details">
+                        <h5 class="experience-text-role">Machine learning intern</h5>
+                        <h5 class="experience-text-date">May 2024 - present</h5>
+                        <ul class="exp-list">
+                            <li class="content"><b>Advanced Analysis</b>: Utilize computer vision algorithms to evaluate balance and gait from video recordings.</li>
+                            <li class="content"><b>Innovative Insights:</b> Enhance physiotherapy assessments with precise movement data.</li>
+                            <li class="content"><b>Robust Validation:</b> Ensure reliability by comparing results against top-tier research lab equipment.</li>
+                            <li class="content"><b>Clinical Accuracy:</b> Deliver trustworthy assessments for improved patient outcomes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for other cards -->
+            <div class="col-md-4">
+                <div class="experience-card">
+                    <div class="card-header" style="background-color: #921A40;">
+                        <a href="https://www.noralta.com/" class="company-name">Noralta Technologies</a>                    </div>
+                    <div class="logo-container" style="padding-top: 100px;">
+                        <img src="img\noralta.png" alt="Company Logo" class="company-logo">
+                    </div>
+                    <div class="experience-text-details">
+                        <h5 class="experience-text-role">Machine learning intern</h5>
+                        <h5 class="experience-text-date">Sep 2023 - Dec 2023</h5>
+                        <ul class="exp-list">
+                            <li class="content">
+                                <b>Data Pre-processing:</b> Conducted thorough data cleaning and feature engineering to enhance dataset quality.
+                            </li>
+                            <li class="content">
+                               <b>Algorithm Innovation</b>  Developed novel algorithms, improving accuracy by an average of 25% using traditional computer vision models.
+        
+        
+                            </li>
+                            
+                              <li class="content"><b>Tailored Solutions:</b> Customized object detection and segmentation models to meet specific company requirements for optimal results.
+                              </li>
+                                </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="experience-card">
+                    <div class="card-header" style="background-color: #2A2F4F;">
+                        <a href="https://cropmind.ca/" class="company-name" ">CropMind</a>                   </div>
+                    <div class="logo-container">
+                        <img src="img\cropmind.png" alt="Company Logo" class="company-logo" >
+                    </div>
+                    <div class="experience-text-details">
+                        <h5 class="experience-text-role">Machine learning intern</h5>
+                        <h5 class="experience-text-date">Apr 2023 - Aug 2023</h5>
+                        <ul class="exp-list">
+                            <li class="content">
+                                <b>Data Collection and Augmentation: </b> Contributed to extensive data collection and analysis, leveraging 10+ public datasets for crop life cycle studies.
+                            </li>
+                            <li class="content">
+                               <b>Model Evaluation:</b>  Played a key role in evaluating and refining machine learning models for improved performance.
+        
+        
+                            </li>
+                            <li class="content">
+                                <b>Innovative Labeling Algorithm:</b>  Developed a novel algorithm for labeling trees in orchards, enhancing automatic orchard management.
+                              </li>
+                              
+                                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="skills-section odd-section" id="skills">
+    <h1 class="sub-headings">Skills</h1>
+    <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="img\python.png" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\html.png" class="responsive-img" />HTML5
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\css.png" class="responsive-img" />CSS3
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\r.png" class="responsive-img"  style="width: 150px;"/>R
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\mysql.png" class="responsive-img" style="width: 190px;"/>MySQL
+              </div>
+              
+              <div class="col s4 m2">
+                <img alt="" src="img\mongo.png" class="responsive-img" style="width: 130px;"/>MongoDB
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Libraries</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="img\numpy.png" class="responsive-img" />NumPy
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\pandas.png" class="responsive-img" style="width: 150px;"/>Pandas
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\opencv.png" class="responsive-img" />OpenCV
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\scikit.png" class="responsive-img" style="width: 200px;"/>scikit-learn
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\matplotlib.png" class="responsive-img" />matplotlib
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\seaborn.png" class="responsive-img" style="width: 200px;padding-top: 40px;" />Seaborn
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="img\bootstrap.png" class="responsive-img" style="width: 200px;"/>Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\keras.png" class="responsive-img" style="width: 200px;padding-top: 50px;" />Keras
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\tensorflow.png" class="responsive-img" />TensorFlow
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\pytorch.png" class="responsive-img" />PyTorch
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\unity.png" class="responsive-img" style="width: 200px;padding-top: 40px;" />Unity3D
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="img\git.png" class="responsive-img" style="width: 200px;" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\vscode.png" class="responsive-img" />Visual Studio Code
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\jupyter.png" class="responsive-img" />Jupyter Notebooks
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="img\azure.png" class="responsive-img" />Azure
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+    <section class="project-section even-section" id="project">
+        <h1 class="sub-headings">Projects</h1>
+    </section>
+
+    
+
+
+    <script src="Dots.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
