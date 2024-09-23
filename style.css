@@ -237,14 +237,10 @@ h1, .icons {
     background-color: #fff; /* Optional: white background behind the logo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
 }
-.card-header:hover {
-    box-shadow: 0 0 20px rgba(146, 26, 64, 0.8);
+.experience-card:hover {
+    transform: scale(1.05);
+    background-color: #1D5B4D; /* Change this color as needed */
 }
-
-.logo-container:hover {
-    transform: scale(1.1);
-}
-
 .experience-text-details {
     background-color: #fff; /* White background for details */
     padding:20px; /* Inner padding for details */
