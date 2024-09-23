@@ -237,6 +237,13 @@ h1, .icons {
     background-color: #fff; /* Optional: white background behind the logo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
 }
+.card-header:hover {
+    box-shadow: 0 0 20px rgba(146, 26, 64, 0.8);
+}
+
+.logo-container:hover {
+    transform: scale(1.1);
+}
 
 .experience-text-details {
     background-color: #fff; /* White background for details */
