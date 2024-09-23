@@ -12,12 +12,12 @@
     <nav class="custom-navbar">
         <ul id="list">
             <li class="link"><a class="nav-link " href="#about">About</a></li>
-            <li class="link"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="link"><a class="nav-link" href="#project">Projects</a></li>
-            <li class="link"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="link"><a class="nav-link " href="#education">Education</a></li>
-            <li class="link"><a class="nav-link" href="https://drive.google.com/file/d/18JyLkMsQcO02pI1PGPXoOm5tDAgihax3/view?usp=drive_link">Resume</a></li>
             <li class="link"><a class="nav-link" href="#contact">Contact</a></li>  
+            <li class="link"><a class="nav-link " href="#education">Education</a></li>
+            <li class="link"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="link"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="link"><a class="nav-link" href="#project">Projects</a></li>
+            <li class="link"><a class="nav-link" href="https://drive.google.com/file/d/18JyLkMsQcO02pI1PGPXoOm5tDAgihax3/view?usp=drive_link">Resume</a></li>
         </ul>
     </nav>
 </header>
@@ -151,7 +151,7 @@
             </div>
             <div class="col-md-4">
                 <div class="experience-card">
-                    <div class="card-header" style="background-color: #2A2F4F;">
+                    <div class="card-header" style="background-color: #2E073F;">
                         <a href="https://cropmind.ca/" class="company-name" ">CropMind</a>                   </div>
                     <div class="logo-container">
                         <img src="img\Expereince\cropmind.png" alt="Company Logo" class="company-logo" >
@@ -291,34 +291,74 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="project-card">
-                    <img src="img/project1.jpg" alt="Project 1" class="project-image">
+                    <img src="img\projects\TreeLablel.jpg" alt="Project 1" class="project-image">
                     <div class="project-details">
-                        <h3>Project Title 1</h3>
-                        <p>A brief description of the project that highlights its main features and technologies used.</p>
-                        <a href="https://github.com/user/project1" class="project-button">View on GitHub</a>
+                        <h3 class="project-heading">Tree Labeling</h3>
+                        <p>This project develops an advanced tree labeling algorithm for apple orchards using video analysis and the YOLOv4 model. 
+                            By leveraging a grid-based layout and dynamic tracking methods, it accurately identifies and labels trees across frames, enhancing monitoring and management tasks for farmers. 
+                            The system integrates machine learning techniques to provide valuable insights from high-resolution video data.</p>
+                        <a href="https://github.com/user/project1" class="project-button">View</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="project-card">
-                    <img src="img/project2.jpg" alt="Project 2" class="project-image">
+                    <img src="img\projects\isosurface.png" alt="Project 2" class="project-image">
                     <div class="project-details">
-                        <h3>Project Title 2</h3>
-                        <p>A brief description of the project that highlights its main features and technologies used.</p>
-                        <a href="https://github.com/user/project2" class="project-button">View on GitHub</a>
+                        <h3 class="project-heading">Ultrasound Visualization using VTK</h3>
+                        <p>Developed a web application leveraging VTK for enhanced ultrasound data visualization, featuring advanced functionalities like image enhancement, isosurface extraction, and Delaunay triangulation.</p>
+                        <a href="https://arxiv.org/abs/2304.14592" class="project-button">View</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="project-card">
-                    <img src="img/project3.jpg" alt="Project 3" class="project-image">
+                    <img src="img\projects\RGBD.png" alt="Project 3" class="project-image">
                     <div class="project-details">
-                        <h3>Project Title 3</h3>
-                        <p>A brief description of the project that highlights its main features and technologies used.</p>
-                        <a href="https://github.com/user/project3" class="project-button">View on GitHub</a>
+                        <h3 class="project-heading">Realization RGBD Image Stylization</h3>
+                        <p>Developed a novel style transfer method for RGB images and depth maps that incorporates a heatmap to enhance realism, significantly improving visual fidelity and user engagement. .</p>
+                        <a href="https://arxiv.org/abs/2305.06565" class="project-button">View</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="img\projects\Protein.png" alt="Project 1" class="project-image">
+                    <div class="project-details">
+                        <h3 class="project-heading">Protein 3D structure visualization using VR</h3>
+                        <p>The project focuses on creating an inference engine for AlphaFold to predict protein 3D structures for visualization in a VR application.
+                            It converts AlphaFold's .pdb files to .obj format using VMD scripting, allowing interactive protein exploration. </p>
+                        <a href="https://drive.google.com/file/d/1BUKHgfYWRm83RV9KStQxD-Bn8kkC0RXm/view?ts=66f1bdff" class="project-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="img\projects\cattle_detection.png" alt="Project 3" class="project-image">
+                    <div class="project-details">
+                        <h3 class="project-heading">Cattle Detection Occlusion Problem
+                        </h3>
+                        <p>This project focuses on cattle detection using various deep learning models, including YOLOv7, RetinaNet with EfficientNet and ResNet50 backbones, and Mask R-CNN. 
+                            By employing image tiling techniques, such as 2x1 and 3x3 tiling, the project enhances detection accuracy, particularly for small and hidden cattle. 
+                            Results show that YOLOv7 outperforms the other models in precision, demonstrating effective implementation for agricultural applications.</p>
+                        <a href="https://arxiv.org/abs/2212.11418" class="project-button">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <img src="img\projects\Rock_classify.png" alt="Project 2" class="project-image">
+                    <div class="project-details">
+                        <h3 class="project-heading">Rock Classification Website</h3>
+                        <p>The rock classification web application utilizes machine learning to enable users to accurately identify and classify various rock types from uploaded images, catering to fields such as geology, mineral exploration, and construction. 
+                            With a user-friendly interface, the application provides quick classification results, enhancing decision-making for professionals. </p>
+                        <a href=https://github.com/user/project1" class="project-button">View</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </section>

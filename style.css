@@ -15,8 +15,8 @@ body {
 
     }
     .even-section{
-        background-color: #E3F6F5;
-        color: #333333;
+        background-color: #FCFAEE;
+        color: #00235B;
         padding-bottom: 50px;
 
 
@@ -70,7 +70,7 @@ ul {
 }
 
 .link .nav-link:hover {
-    color: #6482AD; /* Change to your hover color */
+    color: #FFB1B1; /* Change to your hover color */
 font-style: italic;}
 
 @keyframes fadeIn {
@@ -242,16 +242,21 @@ h1, .icons {
     background-color: #fff; /* White background for details */
     padding:20px; /* Inner padding for details */
     text-align: left; /* Align text to the left */
+    color: #000; /* Brown color */
+
 }
 .experience-text-role{
     margin-top: 70px !important;
     font-size: 30px;
+
 }
 
 .experience-text-role,
 .experience-text-date {
 text-align: center;    margin: 10px 0; /* Space around text */
     font-weight: bold; /* Bold text */
+    color: #00235B;
+
     
 }
 
@@ -293,7 +298,7 @@ text-align: center;    margin: 10px 0; /* Space around text */
     font-weight: bold;
     text-align: center;
     font-size: 50px;
-    color: #6d4c41; /* Brown color */
+    color: #000; /* Brown color */
   }
   .left-list{
     text-align: left;
@@ -393,7 +398,8 @@ text-align: center;    margin: 10px 0; /* Space around text */
 }
 
 .project-details p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     color: #666; /* Lighter color for description */
 }
 
@@ -406,7 +412,10 @@ text-align: center;    margin: 10px 0; /* Space around text */
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
-
+.project-heading{
+    font-size: 40px;
+    font-weight: 700;
+}
 .project-button:hover {
 color:#FFB1B1;    
 transform: scale(1.05); /* Slight zoom effect */
